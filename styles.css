@@ -60,7 +60,7 @@ header {
 
 /* Sections */
 .section {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .section--white {
@@ -292,3 +292,535 @@ footer .social-icons img {
   width: 32px;
   height: 32px;
 }
+
+/* 見出し下の装飾ライン */
+.decorative-line {
+  border-bottom: 1px solid #C6A664;
+  width: 60%;
+  margin: 0 auto 2rem;
+}
+
+/* レイアウト：左に画像、右にリスト */
+.problem-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.problem-image img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+/* 項目リスト */
+.problem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.problem-item {
+  display: flex;
+  align-items: center;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+.check-icon {
+  margin-right: 0.5rem;
+}
+/* 強調背景 */
+.highlight {
+  background-color: #ffdede;
+  padding: 0 0.25rem;
+  border-radius: 2px;
+}
+/* 結論のメッセージ */
+.problem-conclusion {
+  text-align: center;
+  font-size: 1rem;
+  color: #2c2c2c;
+  margin-top: 1.5rem;
+}
+
+/* Salonページ用ヒーローセクション */
+.hero-salon {
+  background: linear-gradient(
+    to bottom,
+    #f7ebe3 0%,   /* ピンクベージュ */
+    #fffdf8 80%   /* アイボリー */
+  );
+  padding: 2rem 2rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 550px;
+}
+
+/* タグライン（上の短い一文） */
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #b78b74; /* 柔らかいローズブラウン */
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+/* メインタイトル */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5a2b1d;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+/* フリガナ部分 */
+.hero-title-child {
+  display: block;
+  font-size: 0.9rem;
+  color: #b78b74;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+
+/* サブタイトル（説明文） */
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: #7b5b4b; /* くすみブラウン */
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* スマホやタブレットなど画面幅が狭い場合のレイアウト調整 */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+}
+
+
+.problem-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.problem-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+}
+
+.problem-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.problem-text {
+  padding: 1rem 1.2rem;
+}
+
+.problem-text h3 {
+  color: #5a2b1d;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.problem-text p {
+  font-size: 0.95rem;
+  color: #6f4b3e;
+  line-height: 1.6;
+}
+
+
+
+/* アクセスセクション */
+.access-info {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4d2b1f;
+  margin-bottom: 1.5rem;
+}
+
+/* Google Map 埋め込みエリア */
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* =======================
+   お客様の声（吹き出しver）
+======================= */
+
+.voice-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.voice-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.voice-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 吹き出し部分 */
+.bubble {
+  position: relative;
+  background-color: #fff3f3;
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+  margin-top: 1rem;
+  text-align: left;
+  color: #4b3a31;
+  line-height: 1.7;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff3f3 transparent;
+}
+
+/* テキスト内のスタイル */
+.voice-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.voice-name {
+  display: block;
+  margin-top: 0.8rem;
+  color: #b6735a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* 画像設定 */
+.voice-image {
+  width: 80%;
+  height: 80%;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+
+
+/* =======================
+   オーナープロフィール（左寄せタイムラインver：線とマーカー重ね）
+======================= */
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.profile-image img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-content {
+  max-width: 700px;
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5a2b1d;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #a0735b;
+  margin-bottom: 1.5rem;
+}
+
+.profile-subtitle {
+  font-size: 1.1rem;
+  color: #5a2b1d;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #c8a47e;
+}
+
+/* ===== タイムライン（左寄せver：線とマーカー中央揃え） ===== */
+.profile-list {
+  position: relative;
+  list-style: none;
+  margin: 2rem auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* 各項目 */
+.profile-list li {
+  position: relative;
+  margin-bottom: 1.5rem;
+  color: #4b3a31;
+  line-height: 1.7;
+  padding-left: 2rem; /* テキストを少し右へ寄せる */
+}
+
+/* マーカーを縦線の真上に完全重ね */
+.profile-list li::before {
+  content: "";
+  position: absolute;
+  left: 20px; /* 縦線と同じ位置 */
+  top: 0.45rem;
+  transform: translateX(-50%); /* 完全中央合わせ */
+  width: 12px;
+  height: 12px;
+  background-color: #c8a47e;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #c8a47e;
+  z-index: 2;
+}
+
+
+/* 背景 */
+.section--beige {
+  background-color: #faf5f1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .profile-list {
+    padding-left: 2rem;
+  }
+  .profile-list li::before {
+    left: 16px;
+  }
+  .profile-image img {
+    width: 50%;
+  }
+}
+
+
+
+
+/* =======================
+   講師紹介（中央揃えver）
+======================= */
+.instructor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.instructor-image img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.instructor-content {
+  max-width: 700px;
+}
+
+.instructor-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5a2b1d;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.name-en {
+  font-size: 1.1rem;
+  color: #b07c62;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.instructor-title {
+  font-size: 1rem;
+  color: #a0735b;
+  margin-bottom: 1.5rem;
+}
+
+.instructor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.instructor-list li {
+  margin-bottom: 0.6rem;
+  color: #4b3a31;
+  line-height: 1.7;
+}
+
+.story {
+  background-color: #fff;
+  border: 1px solid #eaded0;
+  padding: 1.5rem 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.story p {
+  line-height: 1.8;
+  color: #4b3a31;
+  margin: 0;
+}
+
+.instructor-subtitle {
+font-size: 1.1rem;
+  color: #5a2b1d;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #c8a47e;
+}
+
+@media (max-width: 768px) {
+  .instructor-image img {
+    width: 90%;
+  }
+}
+
+/* =======================
+   Intro Section（#c6a664ベースver）
+======================= */
+.intro-section {
+  background: #fff;
+  padding: 2rem 1rem;
+}
+
+/* =======================
+   Intro Section（スクロールフェードver）
+======================= */
+
+.intro-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  border: 1px solid #eaded0;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #fffaf5, #ffffff);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  /* 初期状態：非表示＋下方向に少し移動 */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* スクロールで可視範囲に入ったらフェードイン */
+.intro-box.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.intro-header {
+  margin-bottom: 1rem;
+}
+
+.intro-accent {
+  display: block;
+  font-size: 0.9rem;
+  color: #b78b74;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+/* 💛 タイトルとフリガナを#c6a664ベースに */
+.intro-title {
+  font-size: 2rem;
+  color: #c6a664; /* メインブランドカラー */
+  font-weight: 700;
+  margin: 0;
+}
+
+.intro-sub {
+  font-size: 1rem;
+  color: #bca86f; /* #c6a664より少し柔らかいトーンで馴染ませる */
+  margin-left: 0.3rem;
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  color: #4b3a31;
+  line-height: 1.9;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .intro-box {
+    padding: 2rem 1.5rem;
+  }
+  .intro-title {
+    font-size: 1.6rem;
+  }
+  .intro-text {
+    font-size: 0.95rem;
+  }
+}
+

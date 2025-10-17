@@ -23,33 +23,65 @@
     <section class="section--hero">
       <div class="section__container">
         <h1 class="section__title">一生ものの美肌を手に入れる</h1>
-        <p class="section__subtitle">オンライン超美肌塾｜お肌分析編</p>
+        <p class="section__subtitle">オンライン顔ヨガ講座</p>
         <ul class="hero__benefits">
-          <li>肌悩みの根本原因が分かる</li>
-          <li>自分の肌を知れる</li>
-          <li>迷わないアイテム選び</li>
+          <li>✔️肌悩みの根本原因が分かる</li>
+          <li>✔️自分の肌を知れる</li>
+          <li>✔️迷わないアイテム選び</li>
         </ul>
         <a href="#analysis" class="btn btn--primary">お肌分析に申込む</a>
       </div>
     </section>
 
     <!-- Problems Section -->
-    <section class="section section--white">
-      <div class="section__container">
-        <h2 class="section__title">こんなお悩みありませんか？</h2>
-        <div class="section__content" style="max-width: 800px; margin: 0 auto;">
-          <ul class="problems-list" style="list-style: none; padding: 0; font-size: 1rem; color: #666666; margin-bottom: 1.5rem;">
-            <li>☑ お手入れ頑張っているのにキレイにならない</li>
-            <li>☑ 「良い」と言われるものを試したけど改善しない</li>
-            <li>☑ ずっと肌にコンプレックス　素肌を人に見せられない</li>
-            <li>☑ 年齢と共に変化する見た目にうんざりしている</li>
-          </ul>
-          <p style="text-align: center; font-size: 1rem; color: #2c2c2c;">
-            <strong>ずっと自分の肌に自信がない…</strong><br />その原因は<strong>自分の肌を知らない</strong>から！
-          </p>
+   <!-- こんなお悩みありませんか？ セクション -->
+<section id="problems" class="section section--white">
+  <div class="section__container">
+    <h2 class="section__title">こんなお悩みありませんか？</h2>
+    <hr class="decorative-line">
+
+    <div class="problem-cards">
+      <!-- 1 -->
+      <div class="problem-card">
+        <img src="images/problem1.jpg" alt="お手入れしても綺麗にならない女性" class="problem-image">
+        <div class="problem-text">
+          <h3>お手入れを頑張っているのにキレイにならない</h3>
+          <p>毎日スキンケアをしても変化が感じられず、肌の状態が停滞している気がする。</p>
         </div>
       </div>
-    </section>
+
+      <!-- 2 -->
+      <div class="problem-card">
+        <img src="images/problem2.jpg" alt="改善しないスキンケア" class="problem-image">
+        <div class="problem-text">
+          <h3>「良い」と言われるものを試したけど改善しない</h3>
+          <p>口コミやSNSで人気のアイテムを試したのに、なぜか自分には合わない。</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="problem-card">
+        <img src="images/problem3.jpg" alt="肌にコンプレックスを抱える女性" class="problem-image">
+        <div class="problem-text">
+          <h3>ずっと肌にコンプレックスがある</h3>
+          <p>素肌を人に見せるのが怖くて、ファンデーションが手放せない。</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="problem-card">
+        <img src="images/problem4.jpg" alt="年齢による肌変化" class="problem-image">
+        <div class="problem-text">
+          <h3>年齢と共に変化する見た目にうんざりしている</h3>
+          <p>鏡を見るたびに、たるみやシワが気になるようになってきた。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Solution Section -->
     <section class="section section--beige">
@@ -94,18 +126,36 @@
     </section>
 
     <!-- Instructor Section -->
-    <section class="section section--beige">
-      <div class="section__container">
-        <h2 class="section__title">講師紹介</h2>
-        <div class="section__content" style="max-width: 800px; margin: 0 auto; text-align: center;">
-          <h3 class="feature__title" style="color: #c6a664;">土岐&nbsp;直子（Naoko&nbsp;Toki）</h3>
-          <p style="font-weight: bold; color: #2c2c2c;">エステティシャン歴28年<br />2万人以上のお肌を見てきた小顔と美肌の専門家</p>
-          <p style="font-size: 0.95rem; color: #666666; line-height: 1.8;">
-            アトピーとニキビに悩んだ経験を持ち、肌の知識を学び実践したことで悩みを克服。現在は「サロン&nbsp;ル&nbsp;シェル」を運営し、全国の女性へオンライン美肌サポートを提供しています。
+    <!-- Instructor Section -->
+<section id="instructor" class="section section--beige">
+  <div class="section__container instructor-container">
+    <h2 class="section__title">講師紹介</h2>
+    <hr class="decorative-line">
+
+    <div class="instructor-wrapper">
+      <!-- 左側：講師の写真 -->
+      <div class="profile-image">
+        <img src="img/profile_icon.png" alt="講師 土岐直子">
+      </div>
+
+      <!-- 右側：講師プロフィール -->
+      <div class="instructor-content">
+        <h3 class="instructor-name">土岐 直子 <span class="name-en">Naoko Toki</span></h3>
+        <p class="instructor-title">エステティシャン歴28年／小顔と美肌の専門家</p>
+
+
+        <div class="instructor-section story">
+          <h4 class="instructor-subtitle">Story</h4>
+          <p>
+            アトピーとニキビに悩んだ経験を持ち、肌の知識を学び実践したことで悩みを克服。
+            <br>現在は「サロン ル シェル」を運営し、全国の女性へオンライン美肌サポートを提供しています。
           </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Service Details Section -->
     <section class="section section--white">
@@ -175,16 +225,16 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+<footer>
       <div>
         <p>&copy;&nbsp;2025&nbsp;Le&nbsp;Chel.&nbsp;All&nbsp;rights&nbsp;reserved.</p>
         <div class="social-icons">
-          <a href="#"><img src="placeholder-logo.png" alt="Instagram" /></a>
-          <a href="#"><img src="placeholder-logo.png" alt="LINE" /></a>
+          <a href="https://www.instagram.com/toki_kogao/"><img src="img/icon_insta.webp" alt="Instagram" /></a>
+          <a href="https://line.me/R/ti/p/@219vfsna"><img src="img/icon_line.png" alt="LINE" /></a>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
