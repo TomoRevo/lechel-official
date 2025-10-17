@@ -1,0 +1,294 @@
+/*
+ * Custom styles for the Le Chel static website.
+ *
+ * This stylesheet defines a simple, elegant layout inspired by the original
+ * v0.dev design. It uses a soft beige background, gold accents and
+ * modern typography to create an inviting, spa‑like feel. All pages
+ * share the same header, footer and section layouts. Adjust colours
+ * or spacing here to customise the look of the entire site.
+ */
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f9f6f1; /* light beige */
+  color: #2c2c2c; /* dark neutral for readability */
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c6a664;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2c2c2c;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #c6a664;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+}
+
+.section--white {
+  background-color: #ffffff;
+}
+
+.section--beige {
+  background-color: #f9f6f1;
+}
+
+.section--hero {
+  background-color: #f9f6f1;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.section__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #c6a664;
+}
+
+.section__subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.hero__benefits {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.hero__benefits li {
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #c6a664;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn--primary:hover {
+  background-color: #b59758;
+}
+
+/* Cards for services */
+.services__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1 1 280px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.service-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card__title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #c6a664;
+}
+
+.service-card__description {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #666666;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 280px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.feature__icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #c6a664;
+}
+
+.feature__description {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.testimonial {
+  flex: 1 1 200px;
+  background-color: #f9f6f1;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.testimonial__text {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-item p {
+  margin: 0.25rem 0;
+  color: #666666;
+}
+
+/* Table styling */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+/* FAQ */
+.faq__item {
+  margin-bottom: 1rem;
+}
+
+.faq__question {
+  font-weight: bold;
+  color: #c6a664;
+}
+
+.faq__answer {
+  margin-top: 0.25rem;
+  color: #666666;
+}
+
+/* CTA section */
+.cta {
+  background-color: #f9f6f1;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #c6a664;
+}
+
+.cta__description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #666666;
+}
+
+/* Footer */
+footer {
+  background-color: #f9f6f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
+
+footer .social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social-icons img {
+  width: 32px;
+  height: 32px;
+}
